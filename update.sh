@@ -58,6 +58,7 @@ if [ -z "$NEEDS_TAG" ]; then
   npm publish --access public
   echo "Tagged with $NEW_TAG"
   git push --tags
+  git push
 else
   echo "Already a tag on this commit"
 fi
